@@ -1,0 +1,28 @@
+Java Program for finding whether a character is in Uppercase, Lowercase or is a special character.
+
+
+import java.util.*; 
+public class Main1 
+   {
+   public static void main(String[] args) { 
+   Scanner s= new Scanner(System.in);
+   System.out.println("Enter a Character"); 
+   char c=s.next().charAt(0); 
+   if(48<=c && c<=57)      
+      //using ascii codes of digit where 0-48 and 9-57
+      System.out.println(" Digit");
+   else if(65<=c && c<=90)
+      //using ascii codes of Uppercase letters where A-65 and Z-90
+      System.out.println("Uppercase Letter");
+   else if(97<=c && c<= 122) 
+      //using ascii codes of Lowercase letters where a-97 and z-122
+      System.out.println("Lowercase Letter");
+   else
+      //Rest of the characters ie. special characters
+      System.out.println("Special Character");
+}
+}
+
+
+output:-
+==========
